@@ -1,7 +1,7 @@
-1- create directory sanyr-io-pressure
-2- create files package.json , sanyr-io-pressure.html, sanyr-io-pressure.js
+1. create directory sanyr-io-pressure
+2. create files package.json , sanyr-io-pressure.html, sanyr-io-pressure.js
 	```npm init``` 
-3- make a project
+3. make a project
 
 add to package.json
 ```
