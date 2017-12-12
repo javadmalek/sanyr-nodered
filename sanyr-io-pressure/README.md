@@ -21,3 +21,10 @@ in your node-red user directory, typically ~/.node-red run: npm link <name of no
 
 # Node-Properties
  are accessable from `config`
+ ```
+ const min = config.min;
+ const max = config.max;
+ const tagno = config.tagno;
+ const minalarm = config.minalarm;
+ const maxalarm = config.maxalarm;
+```
