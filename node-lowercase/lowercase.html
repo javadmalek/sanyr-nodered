@@ -1,0 +1,33 @@
+<!--
+    [Editor](https://nodered.org/docs/creating-nodes/node-html)
+    the main node definition that is registered with the editor
+    the node has a single editable property, name
+ -->
+<script type="text/javascript">
+    RED.nodes.registerType('lowercase',{
+        category: 'function',
+        color: '#741000',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"lowercase";
+        }
+    });
+</script>
+
+<!--the edit template-->
+<script type="text/x-red" data-template-name="lowercase">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<!--the help text-->
+<script type="text/x-red" data-help-name="lowercase">
+    <p>A simple node that converts the message payloads into all lowercase characters</p>
+</script>

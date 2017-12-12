@@ -1,0 +1,21 @@
+{
+  "name": "sanyr-io-pressure",
+  "version": "1.0.0",
+  "description": "SANYR Input/Output Pressure Component",
+  "main": "sanyr-io-pressure.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "SANYR.com",
+    "Input / Output",
+    "Pressure"
+  ],
+  "author": "Javad Malek Shahkoohi, Mohammad Ghazivakili, Ebrahim Kargar",
+  "license": "ISC",
+  "node-red": {
+    "nodes": {
+      "lowercase": "sanyr-io-pressure.js"
+    }
+  }
+}

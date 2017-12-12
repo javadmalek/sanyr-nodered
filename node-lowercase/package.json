@@ -1,0 +1,17 @@
+{
+  "name": "node-lowercase",
+  "version": "1.0.0",
+  "description": "The first example of nodered-node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Javad Malek Shahkoohi",
+  "license": "ISC",
+
+  "node-red" : {
+    "nodes": {
+      "lowercase": "lowercase.js"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+<!--
+    [Editor](https://nodered.org/docs/creating-nodes/node-html)
+    the main node definition that is registered with the editor
+    the node has a single editable property, name
+ -->
+<script type="text/javascript">
+    RED.nodes.registerType('sanyr-io-pressure',{
+        category: 'function',
+        color: '#741000',
+        defaults: {
+            name: {value:""},
+            tagno: {value:"1"},
+            min: {value:"-20"},
+            max: {value:"100"},
+            minalarm: {value:"0"},
+            maxalarm: {value:"20"},
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"sanyr-io-pressure";
+        }
+    });
+</script>
+
+<!--the edit template-->
+<script type="text/x-red" data-template-name="sanyr-io-pressure">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-tagno"><i class="icon-tag"></i> Tag Number</label>
+        <input type="text" id="node-input-tagno" placeholder="0">
+    </div>
+    <div class="form-row">
+        <label for="node-input-min"><i class="icon-tag"></i> Min</label>
+        <input type="text" id="node-input-min" placeholder="-20">
+    </div>
+    <div class="form-row">
+        <label for="node-input-max"><i class="icon-tag"></i> Max</label>
+        <input type="text" id="node-input-max" placeholder="100">
+    </div>
+    <div class="form-row">
+        <label for="node-input-min-alarm"><i class="icon-tag"></i>Alarm - Min</label>
+        <input type="text" id="node-input-minalarm" placeholder="0">
+    </div>
+    <div class="form-row">
+        <label for="node-input-max-alarm"><i class="icon-tag"></i>Alarm - Max</label>
+        <input type="text" id="node-input-maxalarm" placeholder="20">
+    </div>
+</script>
+
+<!--the help text-->
+<script type="text/x-red" data-help-name="sanyr-io-pressure">
+    <p>A simple node that converts the message payloads into all sanyr-io-pressure characters</p>
+</script>
