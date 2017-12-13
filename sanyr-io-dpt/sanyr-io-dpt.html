@@ -4,7 +4,7 @@
     the node has a single editable property, name
  -->
 <script type="text/javascript">
-    RED.nodes.registerType('sanyr-io-pressure',{
+    RED.nodes.registerType('sanyr-io-dpt',{
         category: 'function',
         color: '#C31F1F',
         defaults: {
@@ -24,13 +24,13 @@
         outputs:1,
         icon: "file.png",
         label: function() {
-            return this.name||"sanyr-io-pressure";
+            return this.name||"sanyr-io-dpt";
         }
     });
 </script>
 
 <!--the edit template-->
-<script type="text/x-red" data-template-name="sanyr-io-pressure">
+<script type="text/x-red" data-template-name="sanyr-io-dpt">
     <div class="form-row">
         <label for="node-input-name"><i class="icon-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
@@ -83,6 +83,6 @@
 </script>
 
 <!--the help text-->
-<script type="text/x-red" data-help-name="sanyr-io-pressure">
-    <p>A simple node that converts the message payloads into all sanyr-io-pressure characters</p>
+<script type="text/x-red" data-help-name="sanyr-io-dpt">
+    <p>A simple node that converts the message payloads into all sanyr-io-dpt characters</p>
 </script>

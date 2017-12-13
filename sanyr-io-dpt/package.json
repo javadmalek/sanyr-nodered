@@ -1,22 +1,24 @@
 {
-  "name": "sanyr-io-pressure",
+  "name": "sanyr-io-dpt",
   "version": "1.0.0",
-  "description": "SANYR Input/Output Pressure Component",
-  "main": "sanyr-io-pressure.js",
+  "description": "SANYR Input/Output Differential Pressure Transmitter Component",
+  "main": "sanyr-io-dpt.js",
   "scripts": {
     "test": "test"
   },
   "keywords": [
     "SANYR.com",
     "Input / Output",
-    "Pressure",
+    "Differential Pressure Transmitter",
     "SANYRED"
   ],
   "author": "Javad Malek Shahkoohi, Mohammad Ghazivakili, Ebrahim Kargar",
   "license": "ISC",
   "node-red": {
     "nodes": {
-      "sanyr-io-pressure": "sanyr-io-pressure.js"
+      "sanyr-io-dpt": "sanyr-io-dpt.js"
     }
-  }
+  },
+  "dependencies": {},
+  "devDependencies": {}
 }
